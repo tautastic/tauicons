@@ -1,5 +1,6 @@
 ## tauicons
 
+[![install size](https://packagephobia.com/badge?p=tauicons)](https://packagephobia.com/result?p=tauicons)
 [![npm version](https://img.shields.io/npm/v/tauicons.svg?style=flat-square)](https://www.npmjs.com/package/tauicons)
 [![npm downloads](https://img.shields.io/npm/dm/tauicons.svg?style=flat-square)](https://www.npmjs.com/package/tauicons)
 
