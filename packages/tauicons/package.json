@@ -29,7 +29,7 @@
     "format:write": "prettier --write \"./**/*.{js,jsx,ts,tsx,mjs,cjs,json}\"",
     "build": "./scripts/barrel.sh && tsup ./src/index.ts --format cjs,esm --dts && ./scripts/post-build.sh",
     "clean": "rm -rf node_modules .turbo .next .cache dist",
-    "release": "pnpm run build && cd ./dist && npm publish --access public",
+    "release": "pnpm run build && cd ./dist && npm publish",
     "prepublishOnly": "./scripts/check-dist.sh"
   },
   "devDependencies": {
