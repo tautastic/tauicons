@@ -9,7 +9,7 @@ if [ "$(basename "$(pwd)")" != "dist" ]; then
   exit 1
 fi
 
-required_files=(LICENSE README.md package.json .npmignore index.d.ts index.js index.mjs)
+required_files=(LICENSE README.md package.json .npmignore index.d.ts index.js index.cjs)
 
 for f in "${required_files[@]}"; do
   if [ ! -f "$f" ]; then

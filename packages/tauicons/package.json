@@ -22,7 +22,6 @@
   ],
   "type": "module",
   "main": "index.js",
-  "commonjs": "index.cjs",
   "types": "index.d.ts",
   "scripts": {
     "lint": "eslint ./src --ext .js,.jsx,.ts,.tsx",
