@@ -288,7 +288,6 @@ export { default as Sun } from "./icons/sun";
 export { default as Tablet } from "./icons/tablet";
 export { default as Tag } from "./icons/tag";
 export { default as Target } from "./icons/target";
-export { default as Tau } from "./icons/tau";
 export { default as Terminal } from "./icons/terminal";
 export { default as Thermometer } from "./icons/thermometer";
 export { default as ThumbsDown } from "./icons/thumbs-down";
