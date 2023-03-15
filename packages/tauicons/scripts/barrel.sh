@@ -24,16 +24,20 @@ echo -e "${YELLOW} Adding barrel exports to ${srcPath}/index.ts${NC}"
 echo 'import { type FC, type SVGAttributes } from "react";
 
 export interface IconProps extends SVGAttributes<SVGElement> {
-  color?: string;
   size?: string | number;
 }
 
 export type Icon = FC<IconProps>;
 
 export const DefaultIconProps: Partial<IconProps> = {
-  color: "currentColor",
   size: 24,
+  fill: "none",
   strokeWidth: 1.5,
+  viewBox: "0 0 24 24",
+  stroke: "currentColor",
+  strokeLinecap: "round",
+  strokeLinejoin: "round",
+  shapeRendering: "geometricPrecision",
 };
 ' > "${srcPath}/index.ts"
 
