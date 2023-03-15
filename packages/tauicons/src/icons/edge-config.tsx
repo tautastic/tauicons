@@ -8,14 +8,8 @@ const EdgeConfig: Icon = forwardRef<SVGSVGElement, IconProps>(({ ...props }, ref
       ref={ref}
       width={iconProps.size}
       height={iconProps.size}
+      {...iconProps}
       viewBox="0 0 60 60"
-      fill="none"
-      stroke={iconProps.color}
-      strokeWidth={iconProps.strokeWidth}
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      shapeRendering="geometricPrecision"
-      {...props}
     >
       <path
         d="M23.7914 16.5276C34.1696 16.5276 42.5828 13.7232 42.5828 10.2638C42.5828 6.8044 34.1696 4 23.7914 4C13.4132 4 5 6.8044 5 10.2638C5 13.7232 13.4132 16.5276 23.7914 16.5276Z"

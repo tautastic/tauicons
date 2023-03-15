@@ -8,14 +8,8 @@ const Branch: Icon = forwardRef<SVGSVGElement, IconProps>(({ ...props }, ref) =>
       ref={ref}
       width={iconProps.size}
       height={iconProps.size}
+      {...iconProps}
       viewBox="0 0 20 20"
-      fill="none"
-      stroke={iconProps.color}
-      strokeWidth={iconProps.strokeWidth}
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      shapeRendering="geometricPrecision"
-      {...props}
     >
       <path
         strokeLinecap="round"

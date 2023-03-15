@@ -4,19 +4,7 @@ import { type Icon, type IconProps, DefaultIconProps } from "../index";
 const Serverless: Icon = forwardRef<SVGSVGElement, IconProps>(({ ...props }, ref) => {
   const iconProps = { ...DefaultIconProps, ...props };
   return (
-    <svg
-      ref={ref}
-      width={iconProps.size}
-      height={iconProps.size}
-      viewBox="0 0 20 20"
-      fill="none"
-      stroke={iconProps.color}
-      strokeWidth={iconProps.strokeWidth}
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      shapeRendering="geometricPrecision"
-      {...props}
-    >
+    <svg ref={ref} width={iconProps.size} height={iconProps.size} {...props} viewBox="0 0 20 20">
       <defs>
         <mask id=":R5lb0tumol8m:">
           <path

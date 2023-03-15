@@ -4,24 +4,12 @@ import { type Icon, type IconProps, DefaultIconProps } from "../index";
 const EdgeConfig: Icon = forwardRef<SVGSVGElement, IconProps>(({ ...props }, ref) => {
   const iconProps = { ...DefaultIconProps, ...props };
   return (
-    <svg
-      ref={ref}
-      width={iconProps.size}
-      height={iconProps.size}
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke={iconProps.color}
-      strokeWidth="1"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      shapeRendering="geometricPrecision"
-      {...props}
-    >
+    <svg ref={ref} width={iconProps.size} height={iconProps.size} {...iconProps} strokeWidth="1">
       <circle
         cx="12"
         cy="12"
         r="11.4"
-        stroke="currentColor"
+        stroke={iconProps.stroke}
         strokeWidth={iconProps.strokeWidth}
       ></circle>
       <path

@@ -4,19 +4,7 @@ import { type Icon, type IconProps, DefaultIconProps } from "../index";
 const CheckInDashedCircle: Icon = forwardRef<SVGSVGElement, IconProps>(({ ...props }, ref) => {
   const iconProps = { ...DefaultIconProps, ...props };
   return (
-    <svg
-      ref={ref}
-      width={iconProps.size}
-      height={iconProps.size}
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke={iconProps.color}
-      strokeWidth={iconProps.strokeWidth}
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      shapeRendering="geometricPrecision"
-      {...props}
-    >
+    <svg ref={ref} width={iconProps.size} height={iconProps.size} {...iconProps}>
       <path
         d="m8 11.857 2.5 2.5L15.857 9"
         stroke="#888"

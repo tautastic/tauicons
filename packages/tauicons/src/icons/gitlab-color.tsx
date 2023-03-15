@@ -8,14 +8,9 @@ const GitlabColor: Icon = forwardRef<SVGSVGElement, IconProps>(({ ...props }, re
       ref={ref}
       width={iconProps.size}
       height={iconProps.size}
-      viewBox="0 0 24 22"
-      stroke="none"
-      fill={iconProps.color}
-      strokeWidth={iconProps.strokeWidth}
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      shapeRendering="geometricPrecision"
       {...props}
+      stroke="none"
+      viewBox="0 0 24 22"
     >
       <path
         fill="#FCA326"

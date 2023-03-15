@@ -4,19 +4,7 @@ import { type Icon, type IconProps, DefaultIconProps } from "../index";
 const Slack: Icon = forwardRef<SVGSVGElement, IconProps>(({ ...props }, ref) => {
   const iconProps = { ...DefaultIconProps, ...props };
   return (
-    <svg
-      ref={ref}
-      width={iconProps.size}
-      height={iconProps.size}
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke={iconProps.color}
-      strokeWidth={iconProps.strokeWidth}
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      shapeRendering="geometricPrecision"
-      {...props}
-    >
+    <svg ref={ref} width={iconProps.size} height={iconProps.size} {...iconProps}>
       <path d="M14.5 10c-.83 0-1.5-.67-1.5-1.5v-5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5z"></path>
       <path d="M20.5 10H19V8.5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"></path>
       <path d="M9.5 14c.83 0 1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5S8 21.33 8 20.5v-5c0-.83.67-1.5 1.5-1.5z"></path>
